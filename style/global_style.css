@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap');
+.text-white{
+	color: white;
+}
 .Brand{
 	font-family: 'Ma Shan Zheng', cursive;
 }
 #navBar{
-	background-color: #EA7773;
+	background-color: #6E00FF;
 }
 #navBar hr{
 	height: 2px !important;
@@ -11,27 +14,31 @@
     margin: 0px ;
 }
 #main .mainBackground{
-	background-color: #EA7773;
+	background-color: #6E00FF;
 	height: 50%;
 	width: 100%;
 }
+
 #main img{
 	width: 90%;
 	height: 95%;
 }
 #main ul{
 	font-size: 50px; 
-	color: white;
 }
 
+#main_card .row{
+	background-color: #6E00FF;
+	border-radius: 1rem;
+}
+#main_card img{
+	width: 20rem;
+	border-radius: 0.5rem;
+}
 footer{
-  color: white;
-	background-color: #EA7773;
+	background-color: #6E00FF;
 }
 #footer ul{
   list-style-type: none;
   font-size: 20px;
-}
-#footer a{
-	color: white;
 }
