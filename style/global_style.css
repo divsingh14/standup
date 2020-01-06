@@ -27,7 +27,8 @@
 	font-size: 50px; 
 }
 
-#main_card .row{
+#main_card .row,
+#quotes .container{
 	background-color: #6E00FF;
 	border-radius: 1rem;
 }
@@ -35,10 +36,19 @@
 	width: 20rem;
 	border-radius: 0.5rem;
 }
-footer{
+#footer footer{
 	background-color: #6E00FF;
 }
 #footer ul{
   list-style-type: none;
   font-size: 20px;
+}
+
+
+
+
+.border{
+	margin: 1rem;
+	border: 0.1rem solid black;
+	border-radius: 0.5rem; 
 }
