@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stand Up</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="../style/global_style.css">
+	<script src="https://kit.fontawesome.com/24fcef6cb1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section id="navBar">
+		<div class="container">
+			<nav class="navbar navbar-expand-md navbar-dark ">
+	   			<div class="d-flex w-50">
+			        <a class="navbar-brand mr-0" href="#"><h3 class="Brand">Stand Up</h3></a>
+			    </div>
+			</nav>
+		</div>
+	</section>
+	<br>
+	<section id="createCompany">
+		<div class="container">
+			<br><br>
+			<div class="row">
+				<div class="col-md-6 p-3">
+					<h4 class="m-2">{Company name}</h4>
+					<img src="../images/logo.png" class="m-3" style="width: 15rem;" alt="">
+				</div>
+				<div class="col-md-6">
+					<div class="shadeborder p-4">
+						<h4>{Comany Name} Login</h4>
+						<form>
+						  <div class="form-group">
+						    <label for="username">User Name</label>
+						    <input type="text" class="form-control" id="username" >
+						  </div>
+						  <div class="form-group">
+						    <label for="password">Password</label>
+						    <input type="password" class="form-control" id="password">
+						  </div>
+						  <button type="submit" class="btn btn-primary">Login</button>
+						</form>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<br><br>
+	<br><br>
+	<br><br>
+	<section id="footer">
+		<footer>
+			<div class="container text-center text-white">
+				<div class="row">
+					<div id="copyright" class="col">
+					</div>
+				</div>
+				<br>
+			</div>
+		</footer>
+	</section>
+</body>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="
+	sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		var year = document.querySelector('#copyright');
+		var d = new Date();
+		year.innerText = "Copyright @ "+d.getFullYear();
+	</script>
+</html>

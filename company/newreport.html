@@ -16,7 +16,7 @@
 			            <span class="navbar-toggler-icon"></span>
 			        </button>
 			    </div>
-			    <div class="navbar-collapse collapse justify-content-center " id="collapsingNavbar">
+			     <div class="navbar-collapse collapse justify-content-center " id="collapsingNavbar">
 			        <ul class="navbar-nav">
 			            <li class="nav-item active">
 			                <a class="nav-link" href="#">Dashboard</a>
@@ -40,76 +40,34 @@
 	<br>
 	<section id="createCompany">
 		<div class="container">
-			<div class="row">
-				<div class="w-50">
-					<h4 class="w-75">Welcome to XYZ Company</h4>
-				</div>
-				<div class="w-50">
-					<img src="../images/logo.png" style="width: 2.5rem" alt="">
-				</div>
-			</div>
 			<br>
+			<h3>Today's Report</h3>
 			<div class="row">
-				<div class="col-md-8 p-3 border">
-					<h5>About Company</h5>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<div class="col-md-8">
+					<form action="">
+						<div class="form-group">
+						  <label for="ytask">Yestreday's task</label>
+						  <textarea class="form-control rounded-0" id="ytask" rows="3"></textarea>
+						</div>
+						<div class="form-group">
+						  <label for="tTask">Today's task</label>
+						  <textarea class="form-control rounded-0" id="tTask" rows="3"></textarea>
+						</div>
+						<div class="form-group">
+						  <label for="rb">Roadblocks</label>
+						  <textarea class="form-control rounded-0" id="rb" rows="3"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Save</button>
+					</form>
 				</div>
-				<div class="col p-3 border" >
-					<h5>Date</h5>
-						<p id="date"></p>
-				</div>
-				<div class="col p-3 border" >
-					<h5>Add</h5>
-					<button class="btn btn-primary btn-sm m-1">Employee</button>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 p-3 border">
-					<h5>Last 5 completed task</h5>
-					<ul>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-					</ul>
-				</div>
-				<div class="col-md-4 p-3 border" >
-					<h5>Tasks</h5>
-					<ul>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-					</ul>
-				</div>
-				<div class="col p-3 border" >
-					<h5>Events</h5>
-					<ul>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum dolor</li>
-					</ul>
+				<div class="col-md-4">
+					<img src="../images/chart.png" style="width: 17rem" alt="">
 				</div>
 			</div>
 		</div>
 	</section>
-	<br>
-	<section id="quotes">
-		<div class="container text-white p-4">
-			<h5>Quote of the day</h5>
-			<blockquote class="blockquote">
-			<p>
-				<em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-				</em>
-			</p>
-			
-			</blockquote>
-		</div>
-	</section>
+	<br><br>
+	<br><br>
 	<br><br>
 	<section id="footer">
 		<footer>
@@ -129,16 +87,7 @@
 	sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 		var year = document.querySelector('#copyright');
-		var date = document.querySelector('#date');
 		var d = new Date();
 		year.innerText = "Copyright @ "+d.getFullYear();
-		setInterval(function(){
-			var currentdate = new Date();
-			var datetime = currentdate.getDay() + "/" + currentdate.getMonth() 
-			+ "/" + currentdate.getFullYear()  
-			+ currentdate.getHours() + ":" 
-			+ currentdate.getMinutes() + ":" + currentdate.getSeconds();
-			date.innerText=datetime;
-		},1000);
 	</script>
 </html>

@@ -45,7 +45,13 @@
 }
 
 
-
+.shadeborder{
+	border: 0.05rem solid #EBEBEB;
+	border-radius: 0.5rem;
+	-webkit-box-shadow: 10px 13px 0px -1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 10px 13px 0px -1px rgba(0,0,0,0.2);
+	box-shadow: 10px 13px 0px -1px rgba(0,0,0,0.2);
+}
 
 .border{
 	margin: 1rem;
